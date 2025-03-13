@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px;
+    padding: 30px;
+    background-color: #1E3A8A;
+    color: white;
+    line-height: 1.6;
+
+    /* Agregar la imagen de fondo */
+    background-image: url('https://media.istockphoto.com/id/2156866096/photo/dark-blue-navy-paper-texture.jpg?s=612x612&w=0&k=20&c=rHWhEkzmk0B0XcHkr5gENmKbmLIrLfD9oO9E-n9LSVw='); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen para que no se desplace con el contenido */
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #3B82F6;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #1E40AF;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+    outline: none;
+}
+
+button {
+    background-color: #3B82F6;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1E40AF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #1E3A8A;
+}
+
+#noteForm {
+    margin-bottom: 20px;
+}
+
+#notesList {
+    margin-top: 20px;
+}
+
+.note {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column; /* Apila el contenido verticalmente */
+    justify-content: space-between; /* Espacio entre el contenido y el botón */
+    min-height: 120px; /* Altura mínima para que el botón no quede muy arriba */
+}
+
+.note h3 {
+    margin-top: 0;
+    color: #1E3A8A;
+}
+
+.note p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.note button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end; /* Alinea el botón a la derecha */
+    margin-top: auto; /* Empuja el botón hacia la parte inferior */
+    transition: background-color 0.3s ease;
+}
+
+.note button:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Media Queries */
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+        padding: 40px;
+    }
+
+    input, textarea, button {
+        padding: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input, textarea, button {
+        padding: 10px;
+    }
+}
+
